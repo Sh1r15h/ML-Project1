@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Onion Price Spike Detection</title></head>
+<body>
+<h1>Onion Price Spike Detection</h1>
+<form method="POST" action="/predict">
+<input name="min" placeholder="Min Price"><br><br>
+<input name="max" placeholder="Max Price"><br><br>
+<input name="modal" placeholder="Modal Price"><br><br>
+<button type="submit">Predict</button>
+</form>
+{% if prediction %}
+<h2>{{ prediction }}</h2>
+{% endif %}
+</body>
+</html>
